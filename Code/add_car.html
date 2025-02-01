@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Car</title>
+  </head>
+  <body>
+    <h1>Add Car</h1>
+    <form method="post" action="{{ url_for('add_car') }}">
+      <label for="model_id">Model ID:</label>
+      <input type="text" id="model_id" name="model_id" required>
+
+      <label for="vin">VIN:</label>
+      <input type="text" id="vin" name="vin" required>
+
+      <label for="color">Color:</label>
+      <input type="text" id="color" name="color" required>
+
+      <label for="mileage">Mileage:</label>
+      <input type="text" id="mileage" name="mileage" required>
+
+      <button type="submit">Add Car</button>
+    </form>
+  </body>
+</html>
